@@ -1,5 +1,4 @@
 const Order = require('../../models/order');
-// const Item = require('../../models/item');
 
 module.exports = {
   cart,
@@ -56,6 +55,7 @@ async function checkout(req, res) {
 // Return the logged in user's paid order history
 async function history(req, res) {
   // Sort most recent orders first
+  console.log(req)
   try{
     const orders = await Order
       .find({ user: req.user._id, isPaid: true })
@@ -66,3 +66,4 @@ async function history(req, res) {
   }
 
 }
+

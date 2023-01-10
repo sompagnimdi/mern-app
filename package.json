@@ -17,6 +17,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "sass": "^1.57.0",
+    "seed": "^0.4.4",
     "serve-favicon": "^2.5.0",
     "web-vitals": "^2.1.4"
   },
@@ -26,9 +27,10 @@
     "react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "seed": "node ./config/seed.js"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3009",
   "eslintConfig": {
     "extends": [
       "react-app",
